@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
 /* font-family: 'Mulish', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
 body {
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
 
   min-height: 100vh;
 }
@@ -19,7 +24,7 @@ body {
 
 /* Check margin */
 nav {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   color: #000;
   display: flex;
   justify-content: space-between;
@@ -30,18 +35,19 @@ nav {
 nav ul {
   display: flex;
   gap: 48px;
+  list-style-type: none;
 }
 
 /* Check list link style */
 nav ul li a {
-
+  text-decoration: none;
+  color: #1f1534;
 }
 
 /* Make text bold on hover */
 nav ul li a:hover {
-  
+  font-weight: 700;
 }
-
 
 main {
   display: flex;
@@ -52,32 +58,53 @@ main {
 
 /* Check margin and font styling */
 .text h1 {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 16px;
 }
 
 /* Check font styling */
 .text h1 span {
+  color: #89c5cc;
+  font-weight: 700;
 }
 
 /* Check font styling */
 .text p {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #7d7987;
 }
 
 /* Check font styling and make sure the button is rounded */
 .text button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   gap: 8px;
+  padding: 14px 32px 15px 32px;
+  background-color: #69b99d;
+  margin-top: 48px;
+  border-radius: 4px;
+  border-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
 }
 
 /* Handle when user hover on the button */
 .text button:hover {
+  background-color: #4a9a7e;
 }
 
 /* Check the text styling */
 footer {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
 /* Check the text styling */
@@ -92,4 +119,3 @@ footer a {
   bottom: 0px;
   right: 0px;
 }
-
